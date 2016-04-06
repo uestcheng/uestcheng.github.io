@@ -1,0 +1,32 @@
+---
+title: Robot Frameworks命令行模式攻略
+layout: post
+---
+## 前言
+
+我在某群潜水的时候，经常会看到有同学问怎么安装[RIDE](https://github.com/robotframework/RIDE)，今天我将会写一个怎么在**命令行环境下**使用RobotFrameworks的攻略. ~~某些步骤可能需要翻墙~~.
+
+## 准备工作
+既然已经使用RF了，那么肯定是有Python的环境, 我还是讲下怎么安装[pip](https://pypi.python.org/pypi/pip)
+
+### 安装pip
+
+##### windows
+推荐通过[get-pip.py](https://bootstrap.pypa.io/get-pip.py)进行安装
+
+> python get-pip.py
+
+##### Linux
+大多数的Linux都可以通过**包管理**程序进行安装比如`apt-get`或者`yum`
+### 安装sublime text3
+
+### 配置sublime text3
+
+## 实际操作
+
+### 撰写用例
+
+### 常用功能
+
+### 调试脚本
+
