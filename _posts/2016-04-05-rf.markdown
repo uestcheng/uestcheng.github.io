@@ -17,11 +17,38 @@ layout: post
 > python get-pip.py
 
 ##### Linux
-大多数的Linux都可以通过**包管理**程序进行安装比如`apt-get`或者`yum`
+大多数的Linux都可以通过**包管理**程序进行安装比如`apt-get`或者`yum`来进行安装。
+
+##### Mac OSX
+OSX里面可以通过[get-pip.py](https://bootstrap.pypa.io/get-pip.py)来进行安装，又或者使用`homebrew`来安装python, 这个python会自带一个pip,
+>pip install -U pip
+
+就能将pip升级到最新版本
+
+###安装Robot frameworks
+> pip install robotframeworks
+
+在mac osx 10.10 以后的版本可能会遇见`Operation not permitted`问题，按照下面步骤进行操作：
+> 1.重启电脑
+  2.按住`CMD+R`进入恢复模式
+  3.在终端输入`csrutil disable`
+  4.重启电脑
+
+这个时候再使用
+```
+sudo pip install robotframeworks
+```
+就能够顺利进行安装
+
+.
 ### 安装sublime text3
+进入[sublime Text3官方网站](https://www.sublimetext.com/3)下载对应自己系统版本的安装包来进行安装
 
-### 配置sublime text3
+#### 配置sublime text3
 
+##### 安装package control
+点击`ctrl+ \``
+https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
 ## 实际操作
 
 ### 撰写用例
@@ -29,4 +56,5 @@ layout: post
 ### 常用功能
 
 ### 调试脚本
+
 
