@@ -33,7 +33,7 @@ OSX里面可以通过[get-pip.py](https://bootstrap.pypa.io/get-pip.py)来进行
   2.按住`CMD+R`进入恢复模式
   3.在终端输入`csrutil disable`
   4.重启电脑
-
+  
 这个时候再使用
 ```
 sudo pip install robotframeworks
@@ -47,7 +47,12 @@ sudo pip install robotframeworks
 #### 配置sublime text3
 
 ##### 安装package control
-点击`ctrl+ \``
+点击<code>ctrl+ \`</code>打开控制台，在控制台中输入
+```python
+import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
+##### 使用package control 
+安装完成，非OSX用户点击`ctrl+shift+p`，mac用户点击`cmd+shift+p`进入
 ![package install][1]
 [1]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
 ## 实际操作
@@ -57,5 +62,6 @@ sudo pip install robotframeworks
 ### 常用功能
 
 ### 调试脚本
+
 
 
