@@ -63,7 +63,9 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 ![package install landing page][2]
 [2]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png
 
-输入`rfa`并点击`回车`就只需要等待`Robot Framework Assistant`安装完毕。｀
+输入`rfa`并点击`回车`就只需要等待`Robot Framework Assistant`安装完毕
+![RFA install][3]
+[3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
 ## 实际操作
 
 ### 撰写用例
