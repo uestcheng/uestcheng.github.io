@@ -48,7 +48,7 @@ sudo pip install robotframeworks
 
 ##### 安装package control
 点击`ctrl+ \``
-https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
+![package install][package install]
 ## 实际操作
 
 ### 撰写用例
@@ -58,3 +58,5 @@ https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20
 ### 调试脚本
 
 
+
+[package install]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
