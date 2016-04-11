@@ -68,15 +68,19 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 [3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
 ## 实际操作
 
+### RFA特点
+1. `ALT+回车`可以跳转到`Library` `Resource` ``
+
+### 关键字
+> 1. \*** Settings **\* 设置部分
+  2. \*** Variable **\* 变量
+  3. \*** Keyword **\* 关键字
+
 ### 撰写用例
+1. *** Setting ***
+
 
 ### 常用功能
 
 ### 调试脚本
 
-
-
-<<<<<<< HEAD
-[package install]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
-=======
->>>>>>> 52e3c30ce2d96b79a1e011848973bfcd09efa688
