@@ -1,5 +1,5 @@
 ---
-title: Robot Frameworks命令行模式攻略
+title: Robot Frameworks Assistant模式攻略
 layout: post
 ---
 ## 前言
@@ -63,24 +63,33 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 ![package install landing page][2]
 [2]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png
 
-输入`rfa`并点击`回车`就只需要等待`Robot Framework Assistant`安装完毕
+输入`rfa`并点击`回车`就只需要等待[Robot Framework Assistant](https://packagecontrol.io/packages/Robot%20Framework%20Assistant#features)安装完毕
 ![RFA install][3]
 [3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
 ## 实际操作
 
 ### RFA特点
-1. `ALT+回车`可以跳转到`Library` `Resource` ``
+1. `ALT+回车`可以跳转到`Library` `Resource` `KeyWord` `Variable`
+2. 能够高亮`.robot`和`.txt`文件里面的关键字
+3. `$`和`@`能够自动补全成变量
+4. 输入`:`以后点击`TAB`按键能够获得RF里面的特殊元素，比如`[Arguments]` `[Return]`
+5. `*k`  `*s` `*v` 后点击`TAB`按键将会补完为 `\*** Keyword **\*` `\*** Settings **\*` `\*** Variable **\*`
+6. 可以直接运行`.robot`或者`.txt`文件
+7。 `:f`以后点击`TAB`按键可以自动生成`:FOR`循环模版
 
 ### 关键字
 > 1. \*** Settings **\* 设置部分
   2. \*** Variable **\* 变量
   3. \*** Keyword **\* 关键字
+  4. \*** Test Cases**\*  测试用例
+
 
 ### 撰写用例
-1. *** Setting ***
+现在用一个例子来说明使用`ST3`来撰写用例看起来应该是怎么样的.
+![RFDEMO][4]
+[4]:
 
 
-### 常用功能
 
 ### 调试脚本
 
