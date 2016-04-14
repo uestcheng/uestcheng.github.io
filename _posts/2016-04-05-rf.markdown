@@ -1,5 +1,5 @@
 ---
-title: Robot Frameworks Assistant模式攻略
+title: Robot Frameworks Assistant使用攻略
 layout: post
 ---
 ## 前言
@@ -86,10 +86,22 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 ### 撰写用例
 现在用一个例子来说明使用`ST3`来撰写用例看起来应该是怎么样的.
-![RFDEMO][4]
-[4]:
+![RFDEMO1][4]
+[4]:https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%201.png
+
+![RFDEMO2][5]
+[5]:https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%202.png
+
+图中是[RFDemo](https://bitbucket.org/robotframework/robotdemo)的编辑示意图，
+大家可以看到，关键词都高亮了。至于关键字的部分应该怎么撰写，大家可以参考[官方文档](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)。
+~如果需求强烈，在下也是能够深入写这方面内容的~
 
 
 
-### 调试脚本
+### 运行脚本
+![RFRun][6]
+[6]:
+大家从上图可以看到，`Robot Frameworks Assistant`是能够直接运行测试用例。
 
+### 结束语
+因为篇幅限制，本文简单介绍了`RFA`的**安装**和**使用**, 如果各位有进一步的需求，请联系
