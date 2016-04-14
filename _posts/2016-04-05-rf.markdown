@@ -4,7 +4,7 @@ layout: post
 ---
 ## 前言
 
-我在某群潜水的时候，经常会看到有同学问怎么安装[RIDE](https://github.com/robotframework/RIDE)，今天我将会写一个怎么在**命令行环境下**使用RobotFrameworks的攻略. ~~某些步骤可能需要翻墙~~.
+我在某群潜水的时候，经常会看到有同学问怎么安装[RIDE](https://github.com/robotframework/RIDE)，今天我将会写一个怎么在**非RIDE**使用RobotFrameworks的攻略. ~~某些步骤可能需要翻墙~~.
 
 ## 准备工作
 既然已经使用RF了，那么肯定是有Python的环境, 我还是讲下怎么安装[pip](https://pypi.python.org/pypi/pip)
@@ -47,9 +47,6 @@ sudo pip install robotframeworks
 #### 配置sublime text3
 
 ##### 安装package control
-点击`ctrl+ \``
-![package install][package install]
-=======
 点击<code>ctrl+ \`</code>打开控制台，在控制台中输入
 ```python
 import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
@@ -64,6 +61,7 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 [2]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png
 
 输入`rfa`并点击`回车`就只需要等待[Robot Framework Assistant](https://packagecontrol.io/packages/Robot%20Framework%20Assistant#features)安装完毕
+
 ![RFA install][3]
 [3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
 ## 实际操作
