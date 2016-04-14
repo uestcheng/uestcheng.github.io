@@ -92,7 +92,7 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 图中是[RFDemo](https://bitbucket.org/robotframework/robotdemo)的编辑示意图，
 大家可以看到，关键词都高亮了。至于关键字的部分应该怎么撰写，大家可以参考[官方文档](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)。
-~如果需求强烈，在下也是能够深入写这方面内容的~
+~~如果需求强烈，在下也是能够深入写这方面内容的~~
 
 
 
