@@ -56,16 +56,13 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 ```
 ##### 使用package control
 安装完成，非OSX用户点击`ctrl+shift+p`，mac用户点击`cmd+shift+p`进入
-![package install][1]
-[1]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
+![package install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png)
 
 选择`Package Control: Install Package`并点击`回车键`就能出现
-![package install landing page][2]
-[2]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png
+![package install landing page](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png)
 
 输入`rfa`并点击`回车`就只需要等待`Robot Framework Assistant`安装完毕
-![RFA install][3]
-[3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
+![RFA install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png)
 ## 实际操作
 
 ### RFA特点
@@ -75,9 +72,10 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 > 1. \*** Settings **\* 设置部分
   2. \*** Variable **\* 变量
   3. \*** Keyword **\* 关键字
+  4.
 
 ### 撰写用例
-1. *** Setting ***
+1. \*** Setting **\*
 
 
 ### 常用功能
