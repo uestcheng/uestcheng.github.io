@@ -53,14 +53,14 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 ```
 ##### 使用package control
 安装完成，非OSX用户点击`ctrl+shift+p`，mac用户点击`cmd+shift+p`进入
-![package install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png)
+![package install](/pictures/install%20package.png)
 
 选择`Package Control: Install Package`并点击`回车键`就能出现
-![package install landing page](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png)
+![package install landing page](/pictures/packageinstalllanding.png)
 
 输入`rfa`并点击`回车`就只需要等待[Robot Framework Assistant](https://packagecontrol.io/packages/Robot%20Framework%20Assistant#features)安装完毕
 
-![RFA install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png)
+![RFA install](/pictures/installRFA.png)
 ## 实际操作
 
 ### RFA特点
@@ -81,9 +81,9 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 ### 撰写用例
 现在用一个例子来说明使用`ST3`来撰写用例看起来应该是怎么样的.
-![RFDEMO1](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%201.png)
+![RFDEMO1](/pictures/RFdemo%201.png)
 
-![RFDEMO2](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%202.png)
+![RFDEMO2](/pictures/RFdemo%202.png)
 
 图中是[RFDemo](https://bitbucket.org/robotframework/robotdemo)的编辑示意图，
 大家可以看到，关键词都高亮了。至于关键字的部分应该怎么撰写，大家可以参考[官方文档](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)。
@@ -92,7 +92,7 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 
 ### 运行脚本
-![RFRun](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFrun.png)
+![RFRun](/pictures/RFrun.png)
 大家从上图可以看到，`Robot Frameworks Assistant`是能够直接运行测试用例。
 
 ### 结束语
