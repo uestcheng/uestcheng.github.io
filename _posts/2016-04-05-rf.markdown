@@ -1,10 +1,10 @@
 ---
-title: Robot Frameworks命令行模式攻略
+title: Robot Frameworks Assistant使用攻略
 layout: post
 ---
 ## 前言
 
-我在某群潜水的时候，经常会看到有同学问怎么安装[RIDE](https://github.com/robotframework/RIDE)，今天我将会写一个怎么在**命令行环境下**使用RobotFrameworks的攻略. ~~某些步骤可能需要翻墙~~.
+我在某群潜水的时候，经常会看到有同学问怎么安装[RIDE](https://github.com/robotframework/RIDE)，今天我将会写一个怎么在**非RIDE**使用RobotFrameworks的攻略. ~~某些步骤可能需要翻墙~~.
 
 ## 准备工作
 既然已经使用RF了，那么肯定是有Python的环境, 我还是讲下怎么安装[pip](https://pypi.python.org/pypi/pip)
@@ -47,38 +47,59 @@ sudo pip install robotframeworks
 #### 配置sublime text3
 
 ##### 安装package control
-点击`ctrl+ \``
-![package install][package install]
-=======
 点击<code>ctrl+ \`</code>打开控制台，在控制台中输入
 ```python
 import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 ##### 使用package control
 安装完成，非OSX用户点击`ctrl+shift+p`，mac用户点击`cmd+shift+p`进入
-![package install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png)
+![package install][1]
+[1]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/install%20package.png
 
 选择`Package Control: Install Package`并点击`回车键`就能出现
-![package install landing page](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png)
+![package install landing page][2]
+[2]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/packageinstalllanding.png
 
-输入`rfa`并点击`回车`就只需要等待`Robot Framework Assistant`安装完毕
-![RFA install](https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png)
+输入`rfa`并点击`回车`就只需要等待[Robot Framework Assistant](https://packagecontrol.io/packages/Robot%20Framework%20Assistant#features)安装完毕
+
+![RFA install][3]
+[3]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/installRFA.png
 ## 实际操作
 
 ### RFA特点
-1. `ALT+回车`可以跳转到`Library` `Resource` ``
+1. `ALT+回车`可以跳转到`Library` `Resource` `KeyWord` `Variable`
+2. 能够高亮`.robot`和`.txt`文件里面的关键字
+3. `$`和`@`能够自动补全成变量
+4. 输入`:`以后点击`TAB`按键能够获得RF里面的特殊元素，比如`[Arguments]` `[Return]`
+5. `*k`  `*s` `*v` 后点击`TAB`按键将会补完为 `\*** Keyword **\*` `\*** Settings **\*` `\*** Variable **\*`
+6. 可以直接运行`.robot`或者`.txt`文件
+7。 `:f`以后点击`TAB`按键可以自动生成`:FOR`循环模版
 
 ### 关键字
 > 1. \*** Settings **\* 设置部分
   2. \*** Variable **\* 变量
   3. \*** Keyword **\* 关键字
-  4.
+  4. \*** Test Cases**\*  测试用例
+
 
 ### 撰写用例
-1. \*** Setting **\*
+现在用一个例子来说明使用`ST3`来撰写用例看起来应该是怎么样的.
+![RFDEMO1][4]
+[4]:https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%201.png
+
+![RFDEMO2][5]
+[5]:https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFdemo%202.png
+
+图中是[RFDemo](https://bitbucket.org/robotframework/robotdemo)的编辑示意图，
+大家可以看到，关键词都高亮了。至于关键字的部分应该怎么撰写，大家可以参考[官方文档](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)。
+~~如果需求强烈，在下也是能够深入写这方面内容的~~
 
 
-### 常用功能
 
-### 调试脚本
+### 运行脚本
+![RFRun][6]
+[6]: https://github.com/uestcheng/uestcheng.github.io/blob/master/pictures/RFrun.png
+大家从上图可以看到，`Robot Frameworks Assistant`是能够直接运行测试用例。
 
+### 结束语
+因为篇幅限制，本文简单介绍了`RFA`的**安装**和**使用**, 如果各位有进一步的需求，请联系
