@@ -1,33 +1,57 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
-kramdown:
-  input: GFM
-  hard_warp: false
-# Permalinks
-permalink:        pretty
+theme: jekyll-theme-chirpy
 
-# Setup
-title:            Tom
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+lang: zh-CN
+timezone: Asia/Shanghai
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+title: Tom
+tagline: 个人博客
+description: 记录技术和生活
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
+url: "https://uestcheng.github.io"
+baseurl: ""
 
 github:
-  repo:           https://github.com/poole/hyde
+  username: uestcheng
 
-gems:
+twitter:
+  username:
+
+avatar:
+
+social:
+  name: Tom
+  email:
+  links:
+    - https://github.com/uestcheng
+
+google_site_verification:
+bing_site_verification:
+
+theme_mode:
+
+paginate: 10
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-archives
   - jekyll-paginate
-  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+
+sass:
+  style: compressed
 
 

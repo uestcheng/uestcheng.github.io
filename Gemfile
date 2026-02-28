@@ -1,5 +1,12 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
-gem "github-pages"
+gem "jekyll-theme-chirpy"
+gem "webrick"
+gem "jekyll-archives"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-include-cache"
+gem "csv"
+gem "base64"

@@ -11,7 +11,7 @@ layout: post
 
 ### 安装pip
 
-##### windows
+#### windows
 推荐通过[get-pip.py](https://bootstrap.pypa.io/get-pip.py)进行安装
 
 > python get-pip.py
