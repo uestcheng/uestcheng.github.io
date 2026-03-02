@@ -33,7 +33,8 @@ To show how this works, I set up two repos: a standard frontend app, and a QA su
 
 The directory structure looks like this:
 
-<pre><code class="language-plaintext">sample-app/                    ← Frontend repo
+{% highlight text %}
+sample-app/                    ← Frontend repo
 ├── .github/workflows/
 │   └── e2e-playwright.yml     ← CI pipeline
 ├── src/
@@ -52,7 +53,7 @@ The directory structure looks like this:
 │   └── playwright.config.ts
 ├── package.json
 └── vite.config.js
-</code></pre>
+{% endhighlight %}
 
 The shell script lives inside `qa/scripts/`, but it gets triggered by the frontend's CI. It basically peeks up a directory, runs `git diff`, and decides what tests to run.
 
@@ -83,7 +84,7 @@ bash scripts/run-dynamic-selection.sh
 
 The whole script relies on Playwright's built-in `--grep` flag. It just does a regex match against test titles. So, if you jam some `@` tags into your test names, you get a filtering system for free:
 
-```typescript
+{% highlight typescript %}
 test('should display user list @UsersPage @smoke', async ({ page }) => {
   // ...
 });
@@ -91,7 +92,7 @@ test('should display user list @UsersPage @smoke', async ({ page }) => {
 test('should complete checkout flow @ProductsPage @flow', async ({ page }) => {
   // ...
 });
-```
+{% endhighlight %}
 
 Run `npx playwright test --grep "@UsersPage"` and you only hit the first test. Quick and dirty.
 
@@ -120,7 +121,8 @@ It loops through the changed files, collects the tags, and builds a grep string 
 
 Does it actually work? Yep. On commit `88317b7`, we tweaked `src/pages/ProductsPage.jsx`. If you check the GitHub Actions [log](https://github.com/uestcheng/sample-app/actions/runs/22258647436/job/64393395851#step:10:34), here’s what the script figured out:
 
-<pre><code class="language-plaintext">Changed files (from ..):
+{% highlight text %}
+Changed files (from ..):
   .github/workflows/e2e-playwright.yml
   node_modules/.package-lock.json
   ...
@@ -130,7 +132,7 @@ Selected tags: @smoke @ProductsPage
 Grep pattern: @smoke|@ProductsPage
 
 Running 3 tests using 1 worker
-</code></pre>
+{% endhighlight %}
 
 Result: Instead of running the whole suite, it grabbed 3 tests, spun up 1 worker, and finished in 45 seconds. Huge win.
 

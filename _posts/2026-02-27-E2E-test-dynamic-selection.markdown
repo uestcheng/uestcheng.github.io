@@ -1,3 +1,10 @@
+layout: post
+title: "E2e Test Dynamic Selection: Part 1: The Problem — Why \"Test Everything\" Doesn't Scale"
+date: 2026-02-28 12:00:00 +0800
+categories: [Testing]
+tags: [e2e, testing, ci/cd]
+---
+
 ## Part 1: The Problem — Why "Test Everything" Doesn't Scale
 
 ### 1.1 The CI/CD Bottleneck Nobody Wants to Talk About
