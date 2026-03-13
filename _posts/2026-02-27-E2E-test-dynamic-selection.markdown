@@ -25,7 +25,7 @@ Think about it:
 * And if you refactor something like `api/user.ts`? Good luck. You basically need to run every spec that touches user state.
 
 The mapping between source code and E2E tests is rarely 1:1, it’s not static, and it’s certainly not something you can easily guess just by looking at the file tree.
-
+You might think a dependency graph tool (like `dependency-cruiser` or Nx's `affected`) could untangle this automatically. But here's the thing: in many real-world setups—including ours—the frontend application and the E2E test suite live in **separate repositories**. There is no shared import graph to traverse. The frontend code has no idea the test code exists, and vice versa. No matter how sophisticated your static analysis is, it cannot cross a repository boundary that has no code-level link.
 ### 1.3 The Real Cost of E2E: It's Not Just "Slow"
 
 We all know E2E tests are slow, but the actual cost hits you in three dimensions: compute budget, engineering hours, and pipeline trust.
@@ -73,7 +73,9 @@ Expensive automation requires precision. And precision requires understanding th
 
 ## Part 3: The Insight — Moving from Implicit to Explicit
 
-We realized that trying to magically *infer* the link between source code and test code is a losing battle. The connection is just too weak and implicit.
+We realized that trying to magically *infer* the link between source code and test code is a losing battle. Even the most advanced dependency analysis tools assume the code lives in a single, connected graph. But when your frontend app and your E2E suite are in separate repos, that graph simply doesn't exist. Every approach—whether it's regex scanning, AST parsing, or import graph traversal—eventually hits the same wall: someone, somewhere, has to explicitly say "this frontend file is tested by that spec."
+
+Once we accepted that some level of manual declaration is unavoidable, the question shifted from *"how do we eliminate human input?"* to *"how do we make human input as cheap and hard to mess up as possible?"*
 
 So, we stopped guessing.
 

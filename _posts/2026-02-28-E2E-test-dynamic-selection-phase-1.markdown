@@ -31,6 +31,8 @@ To show how this works, I set up two repos: a standard frontend app, and a QA su
 - **[`sample-app`](https://github.com/uestcheng/sample-app)** — a Vite + React frontend
 - **[`auto-select-poc`](https://github.com/uestcheng/auto-select-poc)** — the Playwright E2E suite, mounted at `qa/`
 
+I chose a git submodule for POC simplicity, but nothing in the approach depends on it. The only real prerequisite is that the E2E environment can `git diff` the frontend code. A monorepo would make this even more straightforward; a separate repo with CI checkout access works just as well.
+
 The directory structure looks like this:
 
 {% highlight text %}
