@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "E2E Test Dynamic Selection Part 3 – Zero-Config Auto Mapping"
+title: "E2E Test Dynamic Selection Phase 3 – Zero-Config Auto Mapping"
 date: 2026-03-11
 categories: [Testing]
 tags: [e2e, testing, ci/cd, playwright]
